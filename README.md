@@ -299,8 +299,7 @@ Program di atas bertujuan untuk **mengelola antrian pembeli menggunakan konsep L
 
 Gunakan latihan pada pertemuan minggun ini dan tambahkan seardhing untuk mencari buku berdasarkan judul, penulis, dan ISBN
  
-
-⁠ ```cpp
+```cpp
 #include <iostream>
 using namespace std;
 
@@ -495,7 +494,6 @@ int main() {
 
     return 0;
 }
-
 ```
 
 	⁠Output 
