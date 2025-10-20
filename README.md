@@ -176,7 +176,7 @@ int main() {
 ```
  ⁠
 	⁠Output 
-	⁠![Screenshot Soal 1](https://github.com/salfiayu/Modul-2/blob/main/Modul%202/screenshoot/guided1%20.png)
+	⁠![output Soal 1](https://github.com/chafdv/Modul5/blob/main/output/guided.png)
 
 Program ini bertujuan untuk mengelola data buku menggunakan Single Linked List. Setiap buku menyimpan data ISBN, judul, dan penulis** dalam bentuk node yang saling terhubung. Melalui menu interaktif, pengguna dapat **menambah, menampilkan, memperbarui, dan menghapus** data buku. Program ini menunjukkan penerapan struktur data linked list dalam pengelolaan data yang lebih dinamis dan efisien.
 ---
@@ -289,9 +289,8 @@ int main() {
 
 ```
  ⁠
-
-	⁠Screenshoot  
-	⁠![Screenshot Soal 1](https://github.com/salfiayu/Modul-2/blob/main/Modul%202/screenshoot/Unguided1.png)
+	⁠Output  
+	⁠![output Soal 1]((https://github.com/chafdv/Modul5/blob/main/output/unguided1.png))
 
 Program di atas bertujuan untuk **mengelola antrian pembeli menggunakan konsep Linked List. Setiap data pembeli terdiri dari nama dan pesanan. Program menyediakan menu untuk **menambah pembeli ke antrian, melayani pembeli pertama, serta menampilkan seluruh antrian. Dengan struktur linked list, data dapat ditambah dan dihapus secara dinamis tanpa batasan jumlah antrian.
 ---
@@ -499,8 +498,8 @@ int main() {
 
 ```
 
-	⁠Sreenshoot 
-	⁠![Screenshot Soal 2](https://github.com/salfiayu/Modul-2/blob/main/Modul%202/screenshoot/Unguided2.png)
+	⁠Output 
+	⁠![output Soal 2](https://github.com/chafdv/Modul5/blob/main/output/unguided2.png)
 
 Program ini bertujuan untuk mengelola data buku menggunakan Single Linked List. Setiap buku memiliki data ISBN, judul, dan penulis. Melalui menu, pengguna dapat menambah, menghapus, memperbarui, menampilkan, dan mencari buku berdasarkan judul, penulis, atau ISBN. Program ini menunjukkan cara penggunaan linked list untuk menyimpan dan mengelola data secara dinamis dan efisien.
 
