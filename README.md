@@ -319,7 +319,7 @@ int main() {
 ```
  ⁠
 ⁠Output  
-![output Soal 1]((https://github.com/chafdv/Modul5/blob/main/output/unguided1.png))
+![output Soal 1](https://github.com/chafdv/Modul5/blob/main/output/unguided1.png)
 
 Program di atas bertujuan untuk mengelola antrian pembeli menggunakan konsep Linked List. Setiap data pembeli terdiri dari nama dan pesanan. Program menyediakan menu untuk **menambah pembeli ke antrian, melayani pembeli pertama, serta menampilkan seluruh antrian. Dengan struktur linked list, data dapat ditambah dan dihapus secara dinamis tanpa batasan jumlah antrian.
 ---
