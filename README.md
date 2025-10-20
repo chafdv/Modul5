@@ -87,7 +87,7 @@ public:
         }
 
         if (temp == nullptr) {
-            cout << "\n⚠️ Buku dengan ISBN " << isbn << " tidak ditemukan.\n";
+            cout << "\n Buku dengan ISBN " << isbn << " tidak ditemukan.\n";
             return;
         }
 
@@ -175,10 +175,10 @@ int main() {
 
 ```
  ⁠
-	⁠Output 
-	⁠![output Soal 1](https://github.com/chafdv/Modul5/blob/main/output/guided.png)
+⁠Output 
+![output Soal 1](https://github.com/chafdv/Modul5/blob/main/output/guided.png)
 
-Program ini bertujuan untuk mengelola data buku menggunakan Single Linked List. Setiap buku menyimpan data ISBN, judul, dan penulis** dalam bentuk node yang saling terhubung. Melalui menu interaktif, pengguna dapat **menambah, menampilkan, memperbarui, dan menghapus** data buku. Program ini menunjukkan penerapan struktur data linked list dalam pengelolaan data yang lebih dinamis dan efisien.
+Program ini bertujuan untuk mengelola data buku menggunakan Single Linked List. Setiap buku menyimpan data ISBN, judul, dan penulis** dalam bentuk node yang saling terhubung. Melalui menu interaktif, pengguna dapat menambah, menampilkan, memperbarui, dan menghapus data buku. Program ini menunjukkan penerapan struktur data linked list dalam pengelolaan data yang lebih dinamis dan efisien.
 ---
 
 ## Unguided
@@ -189,7 +189,6 @@ buatlah searcing untuk mencari nama pembeli pada unguided sebelumnya
 
 ```cpp
 #include <iostream>
-#include <string>
 using namespace std;
 
 struct Node {
@@ -248,6 +247,30 @@ void tampilAntrian() {
     cout << endl;
 }
 
+void cariPembeli(string namaDicari) {
+    if (head == nullptr) {
+        cout << "Antrian kosong.\n";
+        return;
+    }
+
+    Node* temp = head;
+    bool ditemukan = false;
+
+    while (temp != nullptr) {
+        if (temp->nama == namaDicari) {
+            cout << "\nPembeli ditemukan!\n";
+            cout << "Nama    : " << temp->nama << endl;
+            cout << "Pesanan : " << temp->pesanan << endl;
+            ditemukan = true;
+            break; 
+        }
+        temp = temp->next;
+    }
+
+    if (!ditemukan)
+        cout << "\nPembeli dengan nama \"" << namaDicari << "\" tidak ditemukan.\n";
+}
+
 int main() {
     int pilihan;
     string nama, pesanan;
@@ -257,7 +280,8 @@ int main() {
         cout << "1. Tambah Antrian\n";
         cout << "2. Layani Antrian\n";
         cout << "3. Tampilkan Antrian\n";
-        cout << "4. Keluar\n";
+        cout << "4. Cari Pembeli\n"; 
+        cout << "5. Keluar\n";
         cout << "Pilih menu: ";
         cin >> pilihan;
         cin.ignore(); 
@@ -277,22 +301,27 @@ int main() {
                 tampilAntrian();
                 break;
             case 4:
+                cout << "Masukkan nama pembeli yang ingin dicari: ";
+                getline(cin, nama);
+                cariPembeli(nama);
+                break;
+            case 5:
                 cout << "Program selesai.\n";
                 break;
             default:
                 cout << "Pilihan tidak valid.\n";
         }
-    } while (pilihan != 4);
+    } while (pilihan != 5);
 
     return 0;
 }
 
 ```
  ⁠
-	⁠Output  
-	⁠![output Soal 1]((https://github.com/chafdv/Modul5/blob/main/output/unguided1.png))
+⁠Output  
+![output Soal 1]((https://github.com/chafdv/Modul5/blob/main/output/unguided1.png))
 
-Program di atas bertujuan untuk **mengelola antrian pembeli menggunakan konsep Linked List. Setiap data pembeli terdiri dari nama dan pesanan. Program menyediakan menu untuk **menambah pembeli ke antrian, melayani pembeli pertama, serta menampilkan seluruh antrian. Dengan struktur linked list, data dapat ditambah dan dihapus secara dinamis tanpa batasan jumlah antrian.
+Program di atas bertujuan untuk mengelola antrian pembeli menggunakan konsep Linked List. Setiap data pembeli terdiri dari nama dan pesanan. Program menyediakan menu untuk **menambah pembeli ke antrian, melayani pembeli pertama, serta menampilkan seluruh antrian. Dengan struktur linked list, data dapat ditambah dan dihapus secara dinamis tanpa batasan jumlah antrian.
 ---
 
 ### Soal 2
@@ -496,8 +525,8 @@ int main() {
 }
 ```
 
-	⁠Output 
-	⁠![output Soal 2](https://github.com/chafdv/Modul5/blob/main/output/unguided2.png)
+⁠Output 
+![output Soal 2](https://github.com/chafdv/Modul5/blob/main/output/unguided2.png)
 
 Program ini bertujuan untuk mengelola data buku menggunakan Single Linked List. Setiap buku memiliki data ISBN, judul, dan penulis. Melalui menu, pengguna dapat menambah, menghapus, memperbarui, menampilkan, dan mencari buku berdasarkan judul, penulis, atau ISBN. Program ini menunjukkan cara penggunaan linked list untuk menyimpan dan mengelola data secara dinamis dan efisien.
 
