@@ -178,7 +178,7 @@ int main() {
 	⁠Output 
 	⁠![Screenshot Soal 1](https://github.com/salfiayu/Modul-2/blob/main/Modul%202/screenshoot/guided1%20.png)
 
-Program ini bertujuan untuk mengelola data buku menggunakan **Single Linked List**. Setiap buku menyimpan data **ISBN, judul, dan penulis** dalam bentuk node yang saling terhubung. Melalui menu interaktif, pengguna dapat **menambah, menampilkan, memperbarui, dan menghapus** data buku. Program ini menunjukkan penerapan struktur data **linked list** dalam pengelolaan data yang lebih dinamis dan efisien.
+Program ini bertujuan untuk mengelola data buku menggunakan Single Linked List. Setiap buku menyimpan data ISBN, judul, dan penulis** dalam bentuk node yang saling terhubung. Melalui menu interaktif, pengguna dapat **menambah, menampilkan, memperbarui, dan menghapus** data buku. Program ini menunjukkan penerapan struktur data linked list dalam pengelolaan data yang lebih dinamis dan efisien.
 ---
 
 ## Unguided
@@ -187,7 +187,7 @@ Program ini bertujuan untuk mengelola data buku menggunakan **Single Linked List
 
 buatlah searcing untuk mencari nama pembeli pada unguided sebelumnya
 
-```
+```cpp
 #include <iostream>
 #include <string>
 using namespace std;
@@ -497,7 +497,7 @@ int main() {
     return 0;
 }
 
- ```
+```
 
 	⁠Sreenshoot 
 	⁠![Screenshot Soal 2](https://github.com/salfiayu/Modul-2/blob/main/Modul%202/screenshoot/Unguided2.png)
